@@ -1,0 +1,6 @@
+[llm]
+provider = "openai"
+base_url = "https://api.openai.com/v1"
+model = "gpt-5.6-sol"
+reasoning_effort = "medium"
+api_key_env = "OPENAI_API_KEY"

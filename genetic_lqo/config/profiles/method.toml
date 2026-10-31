@@ -1,0 +1,27 @@
+[database]
+host = "127.0.0.1"
+port = 15432
+dbname = "imdb"
+user = "imdb"
+password = ""
+
+[search]
+method = "hint_search"
+time_budget_seconds = 3600.0
+cutoff_factor = 2.0
+seed = 71
+use_llm = true
+baseline_timeout_seconds = 90.0
+explain_timeout_seconds = 5.0
+
+[llm]
+timeout_seconds = 300.0
+temperature = 0.7
+max_tokens = 4096
+stream = true
+retry_max_attempts = 2
+
+[cache]
+
+[output]
+output_dir = "runs/hint_search"
